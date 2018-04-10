@@ -59,10 +59,10 @@ int main(int argc, const char * argv[]) {
             }
             case 5:
             {
-                NSString *last = [string substringFromIndex:string.length - 1];
-                if ([last isEqual:@"?"]) {
+                if ([string containsString:@"!"]) {
                     NSLog(@"Whoa, calm down!");
                 }
+                
                 NSLog(@"Enter a number between 1 to 6");
                 scanf("%d", &choice);
                 break;
